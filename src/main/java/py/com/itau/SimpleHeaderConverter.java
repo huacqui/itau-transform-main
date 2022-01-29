@@ -40,7 +40,7 @@ public class SimpleHeaderConverter implements HeaderConverter {
     private static final Logger LOG = LoggerFactory.getLogger(org.apache.kafka.connect.storage.SimpleHeaderConverter.class);
     private static final ConfigDef CONFIG_DEF = new ConfigDef();
     private static final SchemaAndValue NULL_SCHEMA_AND_VALUE = new SchemaAndValue(null, null);
-    private static final Charset UTF_8 = StandardCharsets.UTF_8;
+    private static final Charset UTF_8 = StandardCharsets.ISO_8859_1;
 
     @Override
     public ConfigDef config() {
